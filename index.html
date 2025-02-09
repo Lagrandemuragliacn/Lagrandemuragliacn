@@ -4,65 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grande Muraglia Cinese - Catania</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header Section -->
     <header>
-        Grande Muraglia Cinese - Catania
+        <div class="logo">Grande Muraglia Cinese</div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="story.html">La Storia</a>
+            <a href="contact.html">Contatti</a>
+        </nav>
     </header>
 
-    <!-- Navigation Bar -->
-    <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="story.html">La Storia</a>
-        <a href="contact.html">Contatti</a>
-    </nav>
-
     <!-- Hero Section -->
-    <div class="hero">
-        <h1>Benvenuti alla Grande Muraglia Cinese</h1>
-    </div>
-
-    <!-- Main Content -->
-    <div class="container">
-        <!-- Welcome Section -->
-        <h2>Il Miglior Ristorante Cinese a Catania</h2>
-        <p>
-            Scopri la fusione perfetta tra tradizione e sapore autentico. Offriamo piatti preparati con passione e ingredienti freschi.
-        </p>
-        <div class="cta">
-            <a href="menu.html">Scopri il nostro Menu</a>
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Benvenuti alla Grande Muraglia Cinese</h1>
+            <p>Un'esperienza culinaria autentica nel cuore di Catania</p>
+            <a href="menu.html" class="cta-button">Esplora il Menu</a>
         </div>
+    </section>
 
-        <!-- Image and Specialties -->
-        <h2>Le Nostre Specialità</h2>
-        <img src="images/IMG_3900.JPG" alt="Ristorante Grande Muraglia">
-        <p>
-            Vieni a provare i nostri piatti iconici come gli involtini primavera, il pollo al limone, e tante altre specialità.
-        </p>
+    <!-- Welcome Section -->
+    <section class="welcome">
+        <div class="container">
+            <h2>Il Miglior Ristorante Cinese a Catania</h2>
+            <p>Offriamo piatti autentici preparati con passione e ingredienti freschi. Unisciti a noi per un'esperienza unica.</p>
+            <img src="images/restaurant-interior.jpg" alt="Interno Ristorante">
+        </div>
+    </section>
 
-        <!-- Social Media Links -->
-        <h2>Seguici sui Social</h2>
-        <p>
-            <a href="https://www.facebook.com/profile.php?id=61572948896089" target="_blank">Visita la nostra pagina Facebook</a>
-        </p>
-        <h3>Scansiona il codice QR per Instagram:</h3>
-        <img src="images/insta-qr.jpg" alt="QR Code Instagram" width="200">
+    <!-- Specialties Section -->
+    <section class="specialties">
+        <div class="container">
+            <h2>Le Nostre Specialità</h2>
+            <div class="specialties-grid">
+                <div class="specialty-item">
+                    <img src="images/dish1.jpg" alt="Piatto Cinese">
+                    <h3>Pollo al Limone</h3>
+                </div>
+                <div class="specialty-item">
+                    <img src="images/dish2.jpg" alt="Piatto Cinese">
+                    <h3>Anatra alla Pechinese</h3>
+                </div>
+                <div class="specialty-item">
+                    <img src="images/dish3.jpg" alt="Piatto Cinese">
+                    <h3>Involtini Primavera</h3>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- Reservation Section -->
-        <h2>Prenota un Tavolo</h2>
-        <p>
-            Prenota online il tuo tavolo per un’esperienza unica!<br>
-            <a href="https://forms.gle/Ys28RXw4UEMHEzGw6" target="_blank">Clicca qui per prenotare</a>
-        </p>
-    </div>
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <h2>Vieni a trovarci oggi!</h2>
+            <p>Unisciti a noi per un'autentica esperienza culinaria cinese.</p>
+            <a href="contact.html" class="cta-button">Prenota un Tavolo</a>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
-        &copy; 2025 Grande Muraglia Cinese - Catania | Tutti i diritti riservati
+        <p>&copy; 2025 Grande Muraglia Cinese - Catania | Tutti i diritti riservati</p>
     </footer>
 </body>
 </html>

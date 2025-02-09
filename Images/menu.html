@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Grande Muraglia Cinese</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>Il Nostro Menu</header>
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="story.html">La Storia</a>
+        <a href="contact.html">Contatti</a>
+    </nav>
+    <div class="container">
+        <h1>Scopri il Nostro Menu</h1>
+        <p>Esplora la nostra selezione di piatti autentici e deliziosi, preparati con ingredienti freschi e passione.</p>
+        <div class="menu-grid" id="menu-grid">
+            <!-- JavaScript will dynamically add menu items here -->
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 Grande Muraglia Cinese - Catania
+    </footer>
+
+    <!-- JavaScript to Dynamically Add Images -->
+    <script>
+        // Define the number of images and their folder path
+        const imageCount = 25; // Total number of images
+        const imagePath = "Images/Menu/"; // Path to the images folder
+        const menuGrid = document.getElementById("menu-grid");
+
+        // Generate menu items dynamically
+        for (let i = 1; i <= imageCount; i++) {
+            const menuItem = document.createElement("div");
+            menuItem.classList.add("menu-item");
+            menuItem.innerHTML = `
+                <img src="${imagePath}${i}.jpg" alt="Piatto ${i}">
+                <h3>Piatto ${i}</h3>
+                <p>Descrizione del Piatto ${i}</p>
+            `;
+            menuGrid.appendChild(menuItem);
+        }
+    </script>
+</body>
+</html>
